@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Model Journal
-const Journal = require('./models/Journal');
+const Journal = require('./Journal');
 
 // Rute untuk halaman utama
 app.get('/', (req, res) => {
