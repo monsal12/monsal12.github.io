@@ -18,11 +18,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Model Journal
-const Journal = require('./Journal');
+const Journal = require('./models/Journal');
 
 // Rute untuk halaman utama
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 // Rute untuk menyimpan entri harian
@@ -34,16 +34,6 @@ app.post('/api/journal', async (req, res) => {
         res.status(201).json({ message: 'Entri berhasil disimpan!' });
     } catch (error) {
         res.status(500).json({ message: 'Gagal menyimpan entri.' });
-    }
-});
-
-// Rute untuk mengambil semua entri harian
-app.get('/api/journal', async (req, res) => {
-    try {
-        const entries = await Journal.find(); // Mengambil semua entri jurnal
-        res.status(200).json(entries); // Mengirimkan entri sebagai respons
-    } catch (error) {
-        res.status(500).json({ message: 'Gagal mengambil entri.' });
     }
 });
 
