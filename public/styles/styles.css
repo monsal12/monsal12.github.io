@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#mood-tracker {
+    margin-top: 20px;
+}
+
+#mood {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#daily-journal {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#journal-entry {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#save-entry {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-entry:hover {
+    background-color: #3e8e41;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+#toggle-music {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-music:hover {
+    background-color: #3e8e41;
+}
+
+#background-music {
+    display: none;
+}

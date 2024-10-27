@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Semangat</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hai Ratna, Jangan Lupa Senyum Hari Ini!</h1>
+        <div id="mood-tracker">
+            <label for="mood">Pilih Mood Hari Ini:</label>
+            <select id="mood">
+                <option value="happy">😊 Senang</option>
+                <option value="neutral">😐 Biasa Saja</option>
+                <option value="sad">😢 Sedih</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="daily-journal">
+            <h2>Isi curhatan Harianmu</h2>
+            <textarea id="journal-entry" placeholder="Tulis cerita atau perasaanmu di sini..."></textarea>
+            <button id="save-entry">Simpan</button>
+            <div id="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Musik Latar: <button id="toggle-music">Play/Pause</button></p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="/music/your-music-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
